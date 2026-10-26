@@ -11,10 +11,10 @@ scale without the other side changing.
 
 ```mermaid
 flowchart LR
-    P[Order Producer<br/>producer.py] --> Q[(RabbitMQ queue<br/>"orders")]
-    Q --> W1[Order Worker 1<br/>worker.py --name worker-1]
-    Q --> W2[Order Worker 2<br/>worker.py --name worker-2]
-    W1 --> F[(processed_events.txt<br/>processed event_ids)]
+    P[Order Producer - producer.py] --> Q[RabbitMQ queue - orders]
+    Q --> W1[Order Worker 1]
+    Q --> W2[Order Worker 2]
+    W1 --> F[processed_events.txt]
     W2 --> F
 ```
 
