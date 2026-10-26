@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+processed_events.txt
+.venv/
